@@ -1,0 +1,98 @@
+
+.col{
+    color:var(--col);
+}
+
+.inline{
+    display: inline;
+}
+
+.circle{
+    position: absolute;
+    background-color: var(--col); 
+    animation-name: circle;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+:root{
+    --c1s:40rem;
+    --c2s:30rem;
+    --c3s:20rem;
+}
+
+.c1{
+    width: var(--c1s);
+    height: var(--c1s);
+    border-radius: var(--c1s);
+    top:40vh;
+    left:70vw;
+    animation-delay: 3s;
+}
+
+.c2{
+    width: var(--c2s);
+    height:var(--c2s);
+    border-radius: var(--c2s);
+    top:70vh;
+    left:60vw;
+    animation-delay: 1s;
+}
+
+.c3{
+    width: var(--c3s);
+    height: var(--c3s);
+    border-radius: var(--c3s);
+    top:80vh;
+    left:50vw;
+    animation-delay: 5s;
+}
+
+.c4{
+    width: var(--c2s);
+    height:var(--c2s);
+    border-radius: var(--c2s);
+    top:70vh;
+    left:20vw;
+    animation-delay: 9s;
+}
+
+.c5{
+    width: var(--c3s);
+    height: var(--c3s);
+    border-radius: var(--c3s);
+    top:80vh;
+    left:10vw;
+    animation-delay: 4s;
+}
+
+.c6{
+    width: var(--c2s);
+    height: var(--c2s);
+    border-radius: var(--c1s);
+    top:60vh;
+    left:-20vw;
+    animation-delay: 3s;
+}
+
+.c7{
+    width: var(--c2s);
+    height:var(--c2s);
+    border-radius: var(--c2s);
+    top:70vh;
+    left:0;
+    animation-delay:    6s;
+}
+
+@keyframes circle {
+    0%   {transform: translateY(0%);}
+    20%  {transform: translateY(-5%);}
+    40%  {transform: translateY(-1%);}
+    80%  {transform: translateY(10%);}
+    100% {transform: translateY(0%);}
+  }
+
+
+body{
+    overflow: hidden;
+}

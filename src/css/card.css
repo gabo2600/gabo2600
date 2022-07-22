@@ -1,0 +1,29 @@
+
+
+img{
+    width:20rem
+}
+
+.card{
+    box-shadow: 1px 1px 21px -6px rgba(0, 0, 0, 0.561);
+    width: 20rem;
+    margin:auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card h4,.card p{
+    margin-inline: 0.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width:10rem
+    }
+    
+    .card{
+        width: 10rem;
+    }
+  }
+
+  
