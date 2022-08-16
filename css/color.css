@@ -1,0 +1,83 @@
+:root{
+    --bg:rgb(34, 34, 34);
+    --bg2:rgb(58, 58, 58);
+    
+    --txt:#f9f9f9;
+    --txt2:rgb(222, 222, 222);
+
+    --hue:337;
+
+    --col:hsl(var(--hue), 100%, 50%);
+    --col2:hsla(var(--hue), 100%, 50%,30%);
+}
+
+
+
+/*nav*/
+
+nav{
+    background-color: var(--bg);
+}
+
+nav>a{
+    color:var(--txt);
+}
+
+nav>a:hover::before{
+    content: '';
+    z-index: -1;
+    background-color: var(--txt);
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left:-0.6rem;
+    margin-top: 0.3rem;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+/*General*/
+
+body{
+    background-color: var(--bg);
+    color:var(--txt);
+}
+
+/*sections */
+
+/*s2*/
+#sec2::before{
+    background-color: var(--txt2);
+}
+#sec2{
+    color: var(--bg);
+}
+
+
+#sec2>p{
+    color: var(--bg2);   
+}
+
+/*sec4*/
+
+#cont41>a{
+    color: var(--txt);
+}
+
+#cont41>a:hover>#img1{
+    color: #6e5494;
+}
+
+#cont41>a:hover>#img2{
+    color:#0099ff;
+}
+
+
+#cont41>a:hover>#img3{
+    color:#25D366;
+}
+
+#cont41>a:hover>#img4{
+    color:#0077B5;
+}
+
+

@@ -1,0 +1,11 @@
+
+
+#sec2::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width:100vw;
+    height: 130vh;
+    background-color: aliceblue;
+    transform: skew(0,6deg);
+}
