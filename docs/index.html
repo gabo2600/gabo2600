@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+    --bg:rgb(34, 34, 34);
+    --bg2:rgb(58, 58, 58);
+    
+    --txt:#e7e6e6;
+    --txt2:rgb(222, 222, 222);
+
+    --hue:337;
+
+    --col:hsl(var(--hue), 100%, 50%);
+    --col2:hsla(var(--hue), 100%, 50%,30%);
+}
+
+
+
+/*nav*/
+
+nav{
+    background-color: var(--bg);
+}
+
+nav>a{
+    color:var(--txt);
+}
+
+/*General*/
+
+body{
+    background-color: var(--bg);
+    color:var(--txt);
+}
+
+/*sections */
+
+/*s2*/
+#sec2::before{
+    background-color: var(--txt2);
+}
+#sec2{
+    color: var(--bg);
+}
+
+
+#sec2>p{
+    color: var(--bg2);   
+}
+
+/*sec4*/
+
+#sec2::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    margin-left: -5rem;
+    background-color: aliceblue;
+    transform: skew(0,6deg);
+}
+
+
+nav{
+    position: fixed;
+    width: 100vw;
+    max-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+nav>a{
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    font-weight: 600;
+    max-height: 3rem;
+}
+
+nav>a:hover{
+    
+}
+
+
+.cont{
+    width:100vw;
+    min-height: 100vh;
+    padding:6rem;
+    padding-top: 3rem;
+}
+
+
+#sec1,#sec2{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    justify-content: center;
+    align-items: left;
+    overflow: hidden;
+    padding:5rem
+}
+
+#sec3{
+    padding: 10rem;
+}
+
+.prj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0rem;
+    width: 70vw;
+    margin: auto;
+}
+
+.prj>img{
+    width: 100%;
+}
+
+
+
+#sec4{
+    display: flex;
+    flex-direction: column;
+    
+    box-sizing: border-box;
+}
+
+
+.prj>div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+body{
+    overflow-x: hidden;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*Position */
+
+/*NAv*/
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin-block:2rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    margin-block:2rem;
+}
+
+
+/*sec2*/
+#sec2>p{
+    font-size: 2.4rem;
+
+}
+
+/*sec3*/
+
+.prj>div{
+    padding: 3rem;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#sec1">Home</a>
+        <a href="#sec2">About</a>
+        <a href="#sec3">Projects</a>
+        <a href="#sec4">Contact</a>
+    </nav>
+
+    <div id="sec1" class="cont" >
+        <div>
+            <h1>Gabriel Velez</h1>
+            <h1>Desarrollador de software</h1>
+        </div>
+        <div id="particles"></div>
+    </div>
+
+    <div id="sec2" class="cont" >
+        <h2>Acerca de mí</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perferendis doloribus voluptatibus id ullam reiciendis. Delectus minima recusandae et temporibus, vel alias dolorum non voluptatum, saepe dolor inventore architecto molestias!</p>
+    </div>
+
+    <div id="sec3" class="cont" >
+        
+        <h2>Experiencia</h2>
+        <div class="prj">
+            <img src="img/índice.png" alt="">
+            <div>
+                <h3>asdasdasds asdasd</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste illum enim dolorum provident, temporibus maxime dolor perferendis ex. Consectetur, aut. Quis magnam alias id veritatis ratione, corporis maiores nulla!</p>
+            </div>
+        </div>
+
+        <div class="prj" class="cont" >
+            <div>
+                <h3>asdasdasds asdasd</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste illum enim dolorum provident, temporibus maxime dolor perferendis ex. Consectetur, aut. Quis magnam alias id veritatis ratione, corporis maiores nulla!</p>
+            </div>
+            <img src="img/índice.png" alt="">
+        </div>
+
+        <div class="prj" class="cont" >
+            <img src="img/índice.png" alt="">
+            <div>
+                <h3>asdasdasds asdasd</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste illum enim dolorum provident, temporibus maxime dolor perferendis ex. Consectetur, aut. Quis magnam alias id veritatis ratione, corporis maiores nulla!</p>
+            </div>
+        </div>
+
+        <div class="prj" class="cont" >
+            <div>
+                <h3>asdasdasds asdasd</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste illum enim dolorum provident, temporibus maxime dolor perferendis ex. Consectetur, aut. Quis magnam alias id veritatis ratione, corporis maiores nulla!</p>
+            </div>
+            <img src="img/aaaa.jpg" alt="">
+        </div>
+    </div>
+    
+    <div id="sec4" class="cont" >
+        
+        <div class="prj">
+            <h2>Contacto</h2>
+            <div>
+                <a href="#">Github</a>
+                <a href="#">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Whatsapp</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
