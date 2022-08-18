@@ -2,7 +2,7 @@
     --bg:rgb(34, 34, 34);
     --bg2:rgb(58, 58, 58);
     
-    --txt:#f9f9f9;
+    --txt:#e7e6e6;
     --txt2:rgb(222, 222, 222);
 
     --hue:337;
@@ -21,18 +21,6 @@ nav{
 
 nav>a{
     color:var(--txt);
-}
-
-nav>a:hover::before{
-    content: '';
-    z-index: -1;
-    background-color: var(--txt);
-    width: 0.5rem;
-    height: 0.5rem;
-    margin-left:-0.6rem;
-    margin-top: 0.3rem;
-    border-radius: 1rem;
-    position: absolute;
 }
 
 /*General*/
@@ -58,26 +46,5 @@ body{
 }
 
 /*sec4*/
-
-#cont41>a{
-    color: var(--txt);
-}
-
-#cont41>a:hover>#img1{
-    color: #6e5494;
-}
-
-#cont41>a:hover>#img2{
-    color:#0099ff;
-}
-
-
-#cont41>a:hover>#img3{
-    color:#25D366;
-}
-
-#cont41>a:hover>#img4{
-    color:#0077B5;
-}
 
 
