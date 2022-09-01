@@ -1,11 +1,11 @@
 :root{
     --bg:rgb(34, 34, 34);
-    --bg2:rgb(58, 58, 58);
+    --bg2:rgb(58, 58, 58); 
     
     --txt:#e7e6e6;
     --txt2:rgb(222, 222, 222);
 
-    --hue:337;
+    --hue:200;
 
     --col:hsl(var(--hue), 100%, 50%);
     --col2:hsla(var(--hue), 100%, 50%,30%);
@@ -19,7 +19,7 @@ nav{
     background-color: var(--bg);
 }
 
-nav>a{
+a{
     color:var(--txt);
 }
 
