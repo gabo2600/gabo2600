@@ -204,7 +204,7 @@ a{
 }
 
 
-/* About */
+/* Contact */
 
 #sec4>div>h2{
     text-align: end;
@@ -234,7 +234,7 @@ a{
 .prj>div{
     display: flex;
     flex-direction: column;
-    padding-inline: 2rem;
+    padding-inline: 8rem;
 }
 
 
